@@ -81,7 +81,7 @@ public class AirportTest {
             @DisplayName("Then you can add him but cannot remove him from an economy flight")
             public void testEconomyFlightVipPassenger() {
                 assertAll("Verify all conditions for a VIP passenger and an economy flight",
-                        () -> assertEquals("1", economyFlight.getId()),
+                        () -> assertEquals("444", economyFlight.getId()),
                         () -> assertEquals(true, economyFlight.addPassenger(james)),
                         () -> assertEquals(1, economyFlight.getPassengersSet().size()),
                         () -> assertEquals("James", new ArrayList<>(economyFlight.getPassengersSet()).get(0).getName()),
